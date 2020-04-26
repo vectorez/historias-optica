@@ -232,6 +232,7 @@ $("#NuevoFechaNac").datepicker({
     todayHighlight: true,
     onSelect: function(dateText) {
         var edad = CalculaEdad(dateText);
+        console.log(edad);
         if(edad < 0){
             console.log(edad);
             return "";
