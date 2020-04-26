@@ -229,11 +229,23 @@ $.fn.datepicker.dates['es'] = {
 $("#NuevoFechaNac").datepicker({
     language: "es",
     autoclose: true,
-    todayHighlight: true
+    todayHighlight: true,
+    onSelect: function(dateText) {
+        var edad = CalculaEdad(dateText);
+        if(edad < 0){
+            return "";
+        }
+    }
 });
 
 $("#EditarFechaNac").datepicker({
     language: "es",
     autoclose: true,
-    todayHighlight: true
+    todayHighlight: true,
+    onSelect: function(dateText) {
+        var edad = CalculaEdad(dateText);
+        if(edad < 0){
+            return "";
+        }
+    }
 });

@@ -67,14 +67,6 @@ $(".ValidaTelefono").blur(function () {
     $(this).val(valor);
 });
 
-$(".ValidaEdad").blur(function () {
-    var fecha = $(this).val();
-    var edad = CalculaEdad(fecha);
-    if(edad < 0){
-        $(this).val("");
-    }
-});
-
 $("#btnGuardarConfiguracion").click(function () {
     var nit = $("#ConfNIT").val();
     var direccion = $("#ConfDireccion").val();
