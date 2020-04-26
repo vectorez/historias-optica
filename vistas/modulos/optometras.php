@@ -139,12 +139,21 @@
                 <div class="modal-body">
                     <div class="box-body">
                         <div class="form-group">
-                            <label>Ingresar nombre</label>
+                            <label>Ingresar Nombre</label>
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="fa fa-key"></i>
                                 </span>
-                                <input class="form-control" type="text" name="NuevoNombre" placeholder="Ingresar nombre" required="true">
+                                <input class="form-control ConMayuzculas" type="text" name="NuevoNombre" placeholder="Ingresar nombre" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingresar Apellido</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control ConMayuzculas" type="text" name="NuevoApellido" id="NuevoApellido" placeholder="Ingresar apellido" required="true">
                             </div>
                         </div>
                         <div class="form-group">
@@ -227,7 +236,16 @@
                                 <span class="input-group-addon">
                                     <i class="fa fa-key"></i>
                                 </span>
-                                <input class="form-control" type="text" name="EditarNombre" id="EditarNombre" placeholder="Ingresar nombre" required="true">
+                                <input class="form-control ConMayuzculas" type="text" name="EditarNombre" id="EditarNombre" placeholder="Ingresar nombre" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingresar Apellido</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control ConMayuzculas" type="text" name="EditarApellido" id="EditarApellido" placeholder="Ingresar apellido" required="true">
                             </div>
                         </div>
                         <div class="form-group">

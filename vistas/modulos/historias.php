@@ -31,9 +31,13 @@
                     <a style="display: none;" class="btn btn-primary" href="" id="imprimirHistoria" title="Exportar datos a Excel">
                         <i class="fa fa-file-excel-o"></i>
                     </a>
-                    <button class="btn btn-primary" id="btnHistoriasMasivas" data-toggle="modal" title="Descargar historias masivamente" data-target="#modalHistoriasMasivas">
-                        <i class="fa fa-download"></i>
-                    </button>
+                    <?php
+                        if($_SESSION['perfil'] == 3){
+                            echo '<button class="btn btn-primary" id="btnHistoriasMasivas" data-toggle="modal" title="Descargar historias masivamente" data-target="#modalHistoriasMasivas">
+                                    <i class="fa fa-download"></i>
+                                </button>';
+                        }
+                    ?>
                 </div>
                 
                 <input type="hidden" id="editar" value="<?php echo $_SESSION['edita'];?>">

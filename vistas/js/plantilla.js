@@ -50,6 +50,12 @@ $('.tablas').DataTable({
     "scrollX" : true
 });
 
+$('.ConMayuzculas').blur(function(){
+    var valor = $(this).val();
+    valor = toUpperCase(valor);
+    $(this).val(valor);
+});
+
 $("#btnGuardarConfiguracion").click(function () {
     var nit = $("#ConfNIT").val();
     var direccion = $("#ConfDireccion").val();

@@ -26,7 +26,8 @@
                     <thead>
                         <tr>
                             <th style="width: 10px;">#</th>
-                            <th>Nombre</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
                             <th>Correo</th>
                             <th>Foto</th>
                             <th>Perfil</th>
@@ -49,6 +50,7 @@
                                 <tr>
                                     <td>'.($key+1).'</td>
                                     <td>'.$value['usuarios_nombres_v'].'</td>
+                                    <td>'.$value['usuarios_apellidos_v'].'</td>
                                     <td>'.$value['usuarios_email_v'].'</td>';
 
                                if($value['usuarios_foto'] != ''){
@@ -109,7 +111,8 @@
                     <tfoot>
                         <tr>
                             <th style="width: 10px;">#</th>
-                            <th>Nombre</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
                             <th>Correo</th>
                             <th>Foto</th>
                             <th>Perfil</th>
@@ -145,6 +148,14 @@
                                     <i class="fa fa-user"></i>
                                 </span>
                                 <input class="form-control input-lg" type="text" name="NuevoNombre" placeholder="Ingresar nombre" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input class="form-control input-lg" type="text" name="NuevoApellido" placeholder="Ingresar Apellido" required="true">
                             </div>
                         </div>
                         <div class="form-group">
@@ -222,6 +233,14 @@
                                     <i class="fa fa-user"></i>
                                 </span>
                                 <input class="form-control input-lg" type="text" name="EditarNombre"  id="EditarNombre" placeholder="Ingresar nombre" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <input class="form-control input-lg" type="text" name="EditarApellido"  id="EditarApellido" placeholder="Ingresar Apellido" required="true">
                             </div>
                         </div>
                         <div class="form-group">

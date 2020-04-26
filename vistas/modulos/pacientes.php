@@ -17,8 +17,8 @@
         <div class="box">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                        <input type="hidden" value="<?php echo $_SESSION['edita']; ?>" id="editar"> 
-                        <input type="hidden" value="<?php echo $_SESSION['elimina']; ?>" id="elimina">
+                    <input type="hidden" value="<?php echo $_SESSION['edita']; ?>" id="editar"> 
+                    <input type="hidden" value="<?php echo $_SESSION['elimina']; ?>" id="elimina">
                 </h3>
                 <div class="box-tools pull-right">
                     <button data-toggle="modal" data-target="#modalAgregarMasivo" class="btn btn-success btnAgregarMasivo" title ="Agregar pacientes mediante excel">

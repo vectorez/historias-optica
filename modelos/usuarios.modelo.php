@@ -41,8 +41,9 @@
 		}
 
 		static public function mdlIngresarUsuario($tabla, $datos){
-			$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (usuarios_nombres_v, usuarios_email_v, usuarios_contrasena_v, usuarios_perfil_id_i, usuarios_foto, usuarios_estado_i) VALUES(:usuarios_nombres_v, :usuarios_email_v, :usuarios_contrasena_v, :usuarios_perfil_id_i, :usuarios_foto, :usuarios_estado_i)");
+			$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (usuarios_nombres_v, usuarios_email_v, usuarios_contrasena_v, usuarios_perfil_id_i, usuarios_foto, usuarios_estado_i, usuarios_apellidos_v) VALUES(:usuarios_nombres_v, :usuarios_email_v, :usuarios_contrasena_v, :usuarios_perfil_id_i, :usuarios_foto, :usuarios_estado_i, :usuarios_apellidos_v)");
 			$stmt->bindParam(":usuarios_nombres_v", 	$datos['usuarios_nombres_v'], PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_apellidos_v", 	$datos['usuarios_apellidos_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_email_v", 		$datos['usuarios_email_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_contrasena_v", 	$datos['usuarios_contrasena_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_perfil_id_i", 	$datos['usuarios_perfil_id_i'], PDO::PARAM_STR);
@@ -60,8 +61,9 @@
 
 
 		static public function mdlEditarUsuario($tabla, $datos){
-			$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET usuarios_nombres_v = :usuarios_nombres_v, usuarios_email_v = :usuarios_email_v, usuarios_contrasena_v =  :usuarios_contrasena_v, usuarios_perfil_id_i = :usuarios_perfil_id_i, usuarios_foto = :usuarios_foto, usuarios_estado_i =  :usuarios_estado_i WHERE usuarios_id_i = :usuarios_id_i ");
+			$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET usuarios_nombres_v = :usuarios_nombres_v, usuarios_email_v = :usuarios_email_v, usuarios_contrasena_v =  :usuarios_contrasena_v, usuarios_perfil_id_i = :usuarios_perfil_id_i, usuarios_foto = :usuarios_foto, usuarios_estado_i =  :usuarios_estado_i, usuarios_apellidos_v = :usuarios_apellidos_v WHERE usuarios_id_i = :usuarios_id_i ");
 			$stmt->bindParam(":usuarios_nombres_v", 	$datos['usuarios_nombres_v'], PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_apellidos_v", 	$datos['usuarios_apellidos_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_email_v", 		$datos['usuarios_email_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_contrasena_v", 	$datos['usuarios_contrasena_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_perfil_id_i", 	$datos['usuarios_perfil_id_i'], PDO::PARAM_STR);

@@ -50,14 +50,13 @@
 							$ultimoLogin = ModeloUsuarios::mdlActualizarUsuario($tabla, $item1, $valor1, $item2, $valor2);
 							if($ultimoLogin == "ok"){
 								echo '<script>
-									window.location = "inicio";
-								</script>';
+										window.location = "inicio";
+									</script>';
 							}	
 						}else{
 							echo "<br>";
 							echo "<div class='alert alert-danger'>El usuario no esta activado!</div>";
-						}
-						
+						}					
 						/**/
 					}else{
 						echo "<br>";
@@ -144,7 +143,8 @@
 					$tabla = "sys_usuarios";
 					$contrasenha = crypt($_POST['NuevoPassword'], '$2a$07$usesomesillystringforsalt$');
 					$datos = array(
-								'usuarios_nombres_v' 		=> $_POST['NuevoNombre'], 
+								'usuarios_nombres_v' 		=> $_POST['NuevoNombre'],
+								'usuarios_apellidos_v' 		=> $_POST['NuevoApellido'],
 								'usuarios_email_v' 			=> $_POST['NuevoCorreo'],
 								'usuarios_contrasena_v'  	=> $contrasenha,
 								'usuarios_perfil_id_i'		=> $_POST['NuevoPerfil'],
@@ -288,6 +288,7 @@
 
 					$datos = array(
 							'usuarios_nombres_v' 		=> $_POST['EditarNombre'], 
+							'usuarios_apellidos_v' 		=> $_POST['EditarApellido'], 
 							'usuarios_email_v' 			=> $_POST['EditarCorreo'],
 							'usuarios_contrasena_v'  	=> $contrasenha,
 							'usuarios_perfil_id_i'		=> $_POST['EditarPerfil'],
