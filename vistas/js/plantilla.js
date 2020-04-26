@@ -67,6 +67,14 @@ $(".ValidaTelefono").blur(function () {
     $(this).val(valor);
 });
 
+$(".ValidaEdad").blur(function () {
+    var fecha = $(this).val();
+    var edad = CalculaEdad(valor);
+    if(edad < 0){
+        $(this).val("");
+    }
+});
+
 $("#btnGuardarConfiguracion").click(function () {
     var nit = $("#ConfNIT").val();
     var direccion = $("#ConfDireccion").val();
@@ -97,4 +105,29 @@ $("#btnGuardarConfiguracion").click(function () {
     });
 });
 
-	
+function CalculaEdad(fecha) {
+    // Si la fecha es correcta, calculamos la edad
+    var values = fecha.split("-");
+    var dia = values[2];
+    var mes = values[1];
+    var ano = values[0];
+
+    // cogemos los valores actuales
+    var fecha_hoy = new Date();
+    var ahora_ano = fecha_hoy.getYear();
+    var ahora_mes = fecha_hoy.getMonth()+1;
+    var ahora_dia = fecha_hoy.getDate();
+
+    // realizamos el calculo
+    var edad = (ahora_ano + 1900) - ano;
+    if(ahora_mes < mes ){
+        edad--;
+    }
+    if((mes == ahora_mes) && (ahora_dia < dia)){
+        edad--;
+    }
+    if(edad > 1900){
+        edad -= 1900;
+    }
+    return edad;
+}

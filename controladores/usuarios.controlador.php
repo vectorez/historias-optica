@@ -148,6 +148,8 @@
 								'usuarios_email_v' 			=> $_POST['NuevoCorreo'],
 								'usuarios_contrasena_v'  	=> $contrasenha,
 								'usuarios_perfil_id_i'		=> $_POST['NuevoPerfil'],
+								'usuarios_egresado_v'		=> $_POST['NuevoEgresado'],
+								'usuarios_ano_graduacion_v'	=> $_POST['NuevoAnoGraduacion'],
 								'usuarios_foto'				=> $ruta,
 								'usuarios_estado_i'			=> 1
 							);
@@ -292,6 +294,8 @@
 							'usuarios_email_v' 			=> $_POST['EditarCorreo'],
 							'usuarios_contrasena_v'  	=> $contrasenha,
 							'usuarios_perfil_id_i'		=> $_POST['EditarPerfil'],
+							'usuarios_egresado_v'		=> $_POST['EditarEgresado'],
+							'usuarios_ano_graduacion_v'	=> $_POST['EditarAnoGraduacion'],
 							'usuarios_foto'				=> $ruta,
 							'usuarios_estado_i'			=> 1,
 							'usuarios_id_i'				=> $_POST['EditarUserID']
