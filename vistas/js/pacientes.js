@@ -225,30 +225,31 @@ $.fn.datepicker.dates['es'] = {
     format: "yyyy-mm-dd", 
     weekStart: 0
 };
-
-$("#NuevoFechaNac").datepicker({
-    language: "es",
-    autoclose: true,
-    todayHighlight: true,
-    onSelect: function(dateText) {
-        var edad = CalculaEdad(dateText);
-        console.log(edad);
-        if(edad < 0){
+$(function() {
+    $("#NuevoFechaNac").datepicker({
+        language: "es",
+        autoclose: true,
+        todayHighlight: true,
+        onSelect: function(dateText) {
+            var edad = CalculaEdad(dateText);
             console.log(edad);
-            return "";
+            if(edad < 0){
+                console.log(edad);
+                return "";
+            }
         }
-    }
-});
+    });
 
-$("#EditarFechaNac").datepicker({
-    language: "es",
-    autoclose: true,
-    todayHighlight: true,
-    onSelect: function(dateText) {
-        var edad = CalculaEdad(dateText);
-        if(edad < 0){
-            console.log(edad);
-            return "";
+    $("#EditarFechaNac").datepicker({
+        language: "es",
+        autoclose: true,
+        todayHighlight: true,
+        onSelect: function(dateText) {
+            var edad = CalculaEdad(dateText);
+            if(edad < 0){
+                console.log(edad);
+                return "";
+            }
         }
-    }
-});
+    });
+}
