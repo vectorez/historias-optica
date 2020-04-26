@@ -226,15 +226,7 @@ $.fn.datepicker.dates['es'] = {
     weekStart: 0
 };
 
-$("#NuevoFechaNac").datepicker({
-    language: "es",
-    autoclose: true,
-    defaultDate: new Date(1970,1-1,1),
-    changeMonth: true,
-    changeYear: true,
-    yearRange: '-110:-1',
-    minDate: new Date(1900,1-1,1), maxDate: '-1Y'
-});
+$("#NuevoFechaNac").datepicker('option', {language: "es", minDate: new Date(1900,1-1,1), maxDate: '-1Y'});
 
 $("#EditarFechaNac").datepicker({
     language: "es",
