@@ -205,7 +205,7 @@
 						if(!empty($_POST['fotoActual']) && file_exists($_POST['fotoActual'])){
 							unlink($_POST['fotoActual']);
 						}else{
-							mkdir($directorio, 0755);	
+							mkdir($directorio, 0755, true);	
 						}
 												
 
