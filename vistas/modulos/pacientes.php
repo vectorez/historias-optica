@@ -137,7 +137,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Teléfono</label>
-                                <input class="form-control" name="NuevoTelefono" required placeholder="Teléfono">
+                                <input class="form-control ValidaTelefono" name="NuevoTelefono" required placeholder="Teléfono">
                             </div> 
                         </div>
                         <div class="col-md-6">

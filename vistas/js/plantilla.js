@@ -60,6 +60,13 @@ $(".SoloNumeros").blur(function () {
     $(this).val(valor.replace(/[^0-9]/g,''));
 });
 
+$(".ValidaTelefono").blur(function () {
+    var valor = $(this).val();
+    valor = valor.replace(/[^0-9]/g,'');
+    valor = valor.substr(0,10);
+    $(this).val(valor);
+});
+
 $("#btnGuardarConfiguracion").click(function () {
     var nit = $("#ConfNIT").val();
     var direccion = $("#ConfDireccion").val();
