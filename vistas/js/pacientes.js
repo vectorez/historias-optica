@@ -73,7 +73,7 @@ $('#tablaPacientes tbody').on("click", ".btnEditarPaciente", function(){
             $("#EditarOcupacion").val(data.pacientes_ocupacion_v);
             $("#EditarGenero").val(data.pacientes_sexo_v);
             $("#EditarGenero").val(data.pacientes_sexo_v).change();
-            $("#EditarFechaNac").val(data.pacientes_fecha_nacimiento_d);
+            $("#EditarFechaNacPa").val(data.pacientes_fecha_nacimiento_d);
             $("#EditarEstadoCivil").val(data.pacientes_estado_civil_v);
             $("#EditarEstadoCivil").val(data.pacientes_estado_civil_v).change();
             $("#EditarPacientes_id_i").val(data.pacientes_id_i);
@@ -226,9 +226,9 @@ $.fn.datepicker.dates['es'] = {
     weekStart: 0
 };
 
-$("#NuevoFechaNac").datepicker('option', {language: "es", minDate: new Date(1900,1-1,1), maxDate: '-1Y'});
+$("#NuevoFechaNacPa").datepicker('option', {language: "es", minDate: new Date(1900,1-1,1), maxDate: '-1Y'});
 
-$("#EditarFechaNac").datepicker({
+$("#EditarFechaNacPa").datepicker({
     language: "es",
     autoclose: true,
     defaultDate: new Date(1970,1-1,1),

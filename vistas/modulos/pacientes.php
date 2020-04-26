@@ -162,7 +162,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Fecha Nacimiento</label>
-                                <input class="form-control ValidaEdad" name="NuevoFechaNac" id="NuevoFechaNac"  required placeholder="YYYY-MM-DD">
+                                <input class="form-control ValidaEdad" name="NuevoFechaNac" id="NuevoFechaNacPa"  required placeholder="YYYY-MM-DD">
                             </div> 
                         </div>
                     </div>
@@ -288,7 +288,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Fecha Nacimiento</label>
-                                <input class="form-control" name="EditarFechaNac" required id="EditarFechaNac"  placeholder="YYYY-MM-DD">
+                                <input class="form-control" name="EditarFechaNac" required id="EditarFechaNacPa"  placeholder="YYYY-MM-DD">
                             </div> 
                         </div>
                     </div>
