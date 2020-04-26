@@ -205,7 +205,7 @@
 						if(!empty($_POST['fotoActual']) && file_exists($_POST['fotoActual'])){
 							unlink($_POST['fotoActual']);
 						}else{
-							shell_exec("sudo mkdir vistas/img/usuarios/".$_POST['EditarCorreo']."");
+							shell_exec("mkdir vistas/img/usuarios/".$_POST['EditarCorreo']."");
 						}
 												
 
@@ -242,6 +242,7 @@
 							//creamos la ruta donde se va a guardar la imagen
 							$ruta =  "vistas/img/usuarios/".$_POST['EditarCorreo']."/".$aleatorio.".png";
 							//obtenemos el origen osea el FILE
+							echo $_FILES['EditarFoto']['tmp_name'];
 							$origen  = imagecreatefrompng($_FILES['EditarFoto']['tmp_name']);
 							//le decimos que vamos acrear una imagen en el destino con esos ancho y alto
 							$destino = imagecreatetruecolor($nuevoAncho, $nuevoAlto);
