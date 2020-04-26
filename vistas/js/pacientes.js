@@ -233,6 +233,7 @@ $("#NuevoFechaNac").datepicker({
     onSelect: function(dateText) {
         var edad = CalculaEdad(dateText);
         if(edad < 0){
+            console.log(edad);
             return "";
         }
     }
@@ -245,6 +246,7 @@ $("#EditarFechaNac").datepicker({
     onSelect: function(dateText) {
         var edad = CalculaEdad(dateText);
         if(edad < 0){
+            console.log(edad);
             return "";
         }
     }
