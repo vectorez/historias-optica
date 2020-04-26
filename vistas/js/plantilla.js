@@ -67,9 +67,9 @@ $(".ValidaTelefono").blur(function () {
     $(this).val(valor);
 });
 
-$(".ValidaEdad").blur(function () {
+$(".ValidaEdad").change(function () {
     var fecha = $(this).val();
-    var edad = CalculaEdad(valor);
+    var edad = CalculaEdad(fecha);
     if(edad < 0){
         $(this).val("");
     }
