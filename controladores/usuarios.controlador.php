@@ -205,7 +205,7 @@
 						if(!empty($_POST['fotoActual']) && file_exists($_POST['fotoActual'])){
 							unlink($_POST['fotoActual']);
 						}else{
-							shell_exec("mkdir vistas/img/usuarios/".$_POST['EditarCorreo']."");
+							mkdir($directorio);
 						}
 												
 
