@@ -204,7 +204,7 @@
 						/* Primero preguntamos su existe una imagen en la base de datos */
 						if(!empty($_POST['fotoActual']) && file_exists($_POST['fotoActual'])){
 							unlink($_POST['fotoActual']);
-						}else{
+						}elseif(!file_exists($directorio)){
 							mkdir($directorio);
 						}
 												
