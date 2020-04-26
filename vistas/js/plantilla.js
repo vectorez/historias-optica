@@ -57,7 +57,7 @@ $('.ConMayuzculas').blur(function(){
 
 $(".SoloNumeros").blur(function () {
     var valor = $(this).val();
-    $(this).value = valor.value.replace(/[^0-9]/g,'');
+    $(this).value = valor.replace(/[^0-9]/g,'');
 });
 
 $("#btnGuardarConfiguracion").click(function () {
