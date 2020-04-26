@@ -446,6 +446,7 @@
 					$contrasenha = crypt('optometra421', '$2a$07$usesomesillystringforsalt$');
 					$datos = array(
 								'usuarios_nombres_v' 		=> $_POST['NuevoNombre'], 
+								'usuarios_apellidos_v' 		=> $_POST['NuevoApellido'], 
 								'usuarios_email_v' 			=> $_POST['NuevoCorreo'],
 								'usuarios_telefono_v'  		=> $_POST['NuevoTelefono'],
 								'usuarios_perfil_id_i'		=> 7,
@@ -453,6 +454,8 @@
 								'usuarios_cedula_v'			=> $_POST['NuevoCedula'],
 								'usuarios_estado_i'			=> 1,
 								'usuarios_tarjeta_v'		=> $_POST['NuevoTarjetaProfesional'],
+								'usuarios_egresado_v'		=> $_POST['NuevoEgresado'],
+								'usuarios_ano_graduacion_v'	=> $_POST['NuevoAnoGraduacion'],
 								'usuarios_contrasena_v'		=> $contrasenha
 							);
 
@@ -574,6 +577,7 @@
 
 					$datos = array(
 								'usuarios_nombres_v' 		=> $_POST['EditarNombre'], 
+								'usuarios_apellidos_v' 		=> $_POST['EditarApellido'], 
 								'usuarios_email_v' 			=> $_POST['EditarCorreo'],
 								'usuarios_telefono_v'  		=> $_POST['EditarTelefono'],
 								'usuarios_perfil_id_i'		=> 7,
@@ -582,6 +586,8 @@
 								'usuarios_estado_i'			=> 1,
 								'usuarios_id_i'				=> $_POST['EditarUserID'],
 								'usuarios_tarjeta_v'		=> $_POST['EditarTarjetaProfesional'],
+								'usuarios_egresado_v'		=> $_POST['EditarEgresado'],
+								'usuarios_ano_graduacion_v'	=> $_POST['EditarAnoGraduacion'],
 								'usuarios_contrasena_v'		=> $contrasenha
 						);
 					$respuesta = ModeloUsuarios::mdlEditarOptometra($tabla, $datos);

@@ -98,7 +98,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Numero Documento</label>
-                                <input class="form-control" maxlength="15" name="NuevoDocumento" id="NuevoDocumento"  required="" placeholder="Documento">
+                                <input class="form-control SoloNumeros" maxlength="15" name="NuevoDocumento" id="NuevoDocumento"  required="" placeholder="Documento">
                             </div> 
                         </div>
                     </div>
@@ -107,13 +107,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Nombres</label>
-                                <input class="form-control" name="NuevoNombre" required placeholder="Nombres">
+                                <input class="form-control ConMayuzculas" name="NuevoNombre" required placeholder="Nombres">
                             </div> 
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Apellidos</label>
-                                <input class="form-control" name="NuevoApellido" required placeholder="Apellidos">
+                                <input class="form-control ConMayuzculas" name="NuevoApellido" required placeholder="Apellidos">
                             </div> 
                         </div>
                     </div>

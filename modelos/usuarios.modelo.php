@@ -108,9 +108,10 @@
 		}
 
 		static public function mdlIngresarOptometra($tabla, $datos){
-			$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (usuarios_nombres_v, usuarios_email_v, usuarios_telefono_v, usuarios_perfil_id_i, usuarios_firma_v, usuarios_estado_i, usuarios_cedula_v, usuarios_tarjeta_v, usuarios_contrasena_v) VALUES(:usuarios_nombres_v, :usuarios_email_v, :usuarios_telefono_v, :usuarios_perfil_id_i, :usuarios_firma_v, :usuarios_estado_i, :usuarios_cedula_v, :usuarios_tarjeta_v, :usuarios_contrasena_v)");
+			$stmt = Conexion::conectar()->prepare("INSERT INTO $tabla (usuarios_nombres_v, usuarios_email_v, usuarios_telefono_v, usuarios_perfil_id_i, usuarios_firma_v, usuarios_estado_i, usuarios_cedula_v, usuarios_tarjeta_v, usuarios_contrasena_v, usuarios_apellidos_v, usuarios_egresado_v, usuarios_ano_graduacion_v) VALUES(:usuarios_nombres_v, :usuarios_email_v, :usuarios_telefono_v, :usuarios_perfil_id_i, :usuarios_firma_v, :usuarios_estado_i, :usuarios_cedula_v, :usuarios_tarjeta_v, :usuarios_contrasena_v, :usuarios_apellidos_v, :usuarios_egresado_v, :usuarios_ano_graduacion_v)");
 			
 			$stmt->bindParam(":usuarios_nombres_v", 	$datos['usuarios_nombres_v'], 	PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_apellidos_v", 	$datos['usuarios_apellidos_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_email_v", 		$datos['usuarios_email_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_telefono_v", 	$datos['usuarios_telefono_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_perfil_id_i", 	$datos['usuarios_perfil_id_i'], PDO::PARAM_STR);
@@ -118,6 +119,8 @@
 			$stmt->bindParam(":usuarios_estado_i", 		$datos['usuarios_estado_i'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_cedula_v", 		$datos['usuarios_cedula_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_tarjeta_v", 	$datos['usuarios_tarjeta_v'], 	PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_egresado_v", 	$datos['usuarios_egresado_v'], 	PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_ano_graduacion_v", 	$datos['usuarios_ano_graduacion_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_contrasena_v", 	$datos['usuarios_contrasena_v'], 	PDO::PARAM_STR);
 
 			if($stmt->execute()){
@@ -131,8 +134,9 @@
 
 
 		static public function mdlEditarOptometra($tabla, $datos){
-			$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET usuarios_nombres_v = :usuarios_nombres_v, usuarios_email_v = :usuarios_email_v, usuarios_telefono_v =  :usuarios_telefono_v, usuarios_perfil_id_i = :usuarios_perfil_id_i,  usuarios_firma_v = :usuarios_firma_v, usuarios_estado_i =  :usuarios_estado_i, usuarios_cedula_v = :usuarios_cedula_v , usuarios_tarjeta_v = :usuarios_tarjeta_v, usuarios_contrasena_v = :usuarios_contrasena_v WHERE usuarios_id_i = :usuarios_id_i ");
+			$stmt = Conexion::conectar()->prepare("UPDATE $tabla SET usuarios_nombres_v = :usuarios_nombres_v, usuarios_email_v = :usuarios_email_v, usuarios_telefono_v =  :usuarios_telefono_v, usuarios_perfil_id_i = :usuarios_perfil_id_i,  usuarios_firma_v = :usuarios_firma_v, usuarios_estado_i =  :usuarios_estado_i, usuarios_cedula_v = :usuarios_cedula_v , usuarios_tarjeta_v = :usuarios_tarjeta_v, usuarios_contrasena_v = :usuarios_contrasena_v, usuarios_apellidos_v = :usuarios_apellidos_v, usuarios_egresado_v = :usuarios_egresado_v, usuarios_ano_graduacion_v = :usuarios_ano_graduacion_v WHERE usuarios_id_i = :usuarios_id_i ");
 			$stmt->bindParam(":usuarios_nombres_v", 	$datos['usuarios_nombres_v'], PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_apellidos_v", 	$datos['usuarios_apellidos_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_email_v", 		$datos['usuarios_email_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_telefono_v", 	$datos['usuarios_telefono_v'], PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_perfil_id_i", 	$datos['usuarios_perfil_id_i'], PDO::PARAM_STR);
@@ -141,6 +145,8 @@
 			$stmt->bindParam(":usuarios_id_i", 			$datos['usuarios_id_i'], PDO::PARAM_INT);
 			$stmt->bindParam(":usuarios_cedula_v", 		$datos['usuarios_cedula_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_tarjeta_v", 	$datos['usuarios_tarjeta_v'], 	PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_egresado_v", 	$datos['usuarios_egresado_v'], 	PDO::PARAM_STR);
+			$stmt->bindParam(":usuarios_ano_graduacion_v", 	$datos['usuarios_ano_graduacion_v'], 	PDO::PARAM_STR);
 			$stmt->bindParam(":usuarios_contrasena_v", 	$datos['usuarios_contrasena_v'], 	PDO::PARAM_STR);
 			
 			if($stmt->execute()){

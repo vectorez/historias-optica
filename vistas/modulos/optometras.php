@@ -184,6 +184,24 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label>Ingresar Egresado</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control" type="text" name="NuevoEgresado" id="NuevoEgresado" placeholder="Ingresar Egresado" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingresar Año de graduacion</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control" type="text" name="NuevoAnoGraduacion" id="NuevoAnoGraduacion" placeholder="Ingresar Año de graduacion" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label>Ingresar Teléfono</label>
                             <div class="input-group">
                                 <span class="input-group-addon">
@@ -273,6 +291,24 @@
                                     <i class="fa fa-key"></i>
                                 </span>
                                 <input class="form-control" type="text" name="EditarTarjetaProfesional" id="EditarTarjetaProfesional" placeholder="Ingresar Tarjeta Profesional" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingresar Egresado</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control" type="text" name="EditarEgresado" id="EditarEgresado" placeholder="Ingresar Egresado" required="true">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ingresar Año de graduacion</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-key"></i>
+                                </span>
+                                <input class="form-control" type="text" name="EditarAnoGraduacion" id="EditarAnoGraduacion" placeholder="Ingresar Año de graduacion" required="true">
                             </div>
                         </div>
                         <div class="form-group">

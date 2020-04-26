@@ -55,6 +55,11 @@ $('.ConMayuzculas').blur(function(){
     $(this).val(valor.toUpperCase());
 });
 
+$(".SoloNumeros").blur(function () {
+    var valor = $(this).val();
+    $(this).value = valor.value.replace(/[^0-9]/g,'');
+});
+
 $("#btnGuardarConfiguracion").click(function () {
     var nit = $("#ConfNIT").val();
     var direccion = $("#ConfDireccion").val();
