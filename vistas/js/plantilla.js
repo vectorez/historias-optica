@@ -52,8 +52,7 @@ $('.tablas').DataTable({
 
 $('.ConMayuzculas').blur(function(){
     var valor = $(this).val();
-    valor = toUpperCase(valor);
-    $(this).val(valor);
+    $(this).val(valor.toUpperCase());
 });
 
 $("#btnGuardarConfiguracion").click(function () {
