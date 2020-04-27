@@ -873,7 +873,7 @@
 
 							<tr  style="text-align: justify;">
 								<th>Optómetra</th>
-								<td><?php echo $respuesta['usuarios_nombres_v']; ?></td>
+								<td><?php echo $respuesta['usuarios_nombres_v'].' '.$respuesta['usuarios_apellidos_v']; ?></td>
 							</tr>
 
 							<tr  style="text-align: justify;">

@@ -284,7 +284,7 @@
 							echo '<img src="'.$respuesta['usuarios_firma_v'].'" style="width:200px;height:150px;">';
 						}
 
-						echo "<br/><b>".mb_strtoupper($respuesta['usuarios_nombres_v'].' - Optómetra').'</b>';
+						echo "<br/><b>".mb_strtoupper($respuesta['usuarios_nombres_v'].' '.$respuesta['usuarios_apellidos_v'].' - Optómetra').'</b>';
 					?>
 
 				</td>
