@@ -91,6 +91,8 @@ $('#tablaUsuarios tbody').on("click", ".btnEditarOptometra" , function(){
             $("#EditarCedula").val(data.usuarios_cedula_v);        
             $("#EditarTelefono").val(data.usuarios_telefono_v);
             $("#EditarTarjetaProfesional").val(data.usuarios_tarjeta_v);
+            $("#EditarEgresado").val(data.usuarios_egresado_v);
+            $("#EditarAnoGraduacion").val(data.usuarios_ano_graduacion_v);
             $("#EditarUserID").val(data.usuarios_id_i);
 
             if(data.usuarios_firma_v != '' && data.usuarios_firma_v != null ){
