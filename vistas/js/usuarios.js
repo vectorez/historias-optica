@@ -87,6 +87,7 @@ $('#tablaUsuarios tbody').on("click", ".btnEditarOptometra" , function(){
         dataType    : 'json',
         success     : function(data){
             $("#EditarNombre").val(data.usuarios_nombres_v); 
+            $("#EditarApellido").val(data.usuarios_apellidos_v); 
             $("#EditarCorreo").val(data.usuarios_email_v);  
             $("#EditarCedula").val(data.usuarios_cedula_v);        
             $("#EditarTelefono").val(data.usuarios_telefono_v);
