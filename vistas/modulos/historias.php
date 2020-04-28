@@ -777,7 +777,7 @@
                                                         </td>
                                                     </tr>
                                                      <tr>
-                                                        <td>ID</td>
+                                                        <td>OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="NuevoSinCorreccionID" id="NuevoSinCorreccionID">
@@ -1043,12 +1043,12 @@
                                                 <th></th>
                                                 <th width="11%">Esfera</th>
                                                 <th width="11%">Cilindro</th>
-                                                <th width="11%">Eje</th>
+                                                <th width="11%">EJE</th>
                                                 <th width="11%">AVVL</th>
                                                 <th width="11%">ADD</th>
                                                 <th width="11%">AVVP</th>
-                                                <th width="11%">Dp</th></th>
-                                                <th width="11%">Alt. Foral</th></th>
+                                                <th width="11%">DP</th></th>
+                                                <th width="11%">ALT. FOCAL</th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -2068,7 +2068,7 @@
                                                         </td>
                                                     </tr>
                                                      <tr>
-                                                        <td>ID</td>
+                                                        <td>OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="EditarSinCorreccionID" id="EditarSinCorreccionID">
@@ -2334,12 +2334,12 @@
                                                 <th></th>
                                                 <th width="11%">Esfera</th>
                                                 <th width="11%">Cilindro</th>
-                                                <th width="11%">Eje</th>
+                                                <th width="11%">EJE</th>
                                                 <th width="11%">AVVL</th>
                                                 <th width="11%">ADD</th>
                                                 <th width="11%">AVVP</th>
-                                                <th width="11%">Dp</th></th>
-                                                <th width="11%">Alt. Foral</th></th>
+                                                <th width="11%">DP</th></th>
+                                                <th width="11%">ALT. FOCAL</th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
