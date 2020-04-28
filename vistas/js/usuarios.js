@@ -55,6 +55,7 @@ $('#tablaUsuarios tbody').on("click", ".btnEditarUsuarios" , function(){
         dataType    : 'json',
         success     : function(data){
             $("#EditarNombre").val(data.usuarios_nombres_v); 
+            $("#EditarApellido").val(data.usuarios_apellidos_v); 
             $("#EditarCorreo").val(data.usuarios_email_v);  
             $("#EditarPerfil").val(data.usuarios_perfil_id_i);        
             $("#EditarPerfil").val(data.usuarios_perfil_id_i).change();
