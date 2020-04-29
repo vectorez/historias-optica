@@ -64,7 +64,12 @@ $(".ValidaTelefono").blur(function () {
     var valor = $(this).val();
     valor = valor.replace(/[^0-9]/g,'');
     valor = valor.substr(0,10);
-    $(this).val(valor);
+    if(valor.length == 10){
+        $(this).val(valor);
+    }else{
+        $(this).val('');
+    }
+    
 });
 
 $("#btnGuardarConfiguracion").click(function () {
