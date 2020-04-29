@@ -230,8 +230,11 @@ $("#NuevoFechaNacPa").datepicker({
     language: "es",
     autoclose: true,
     todayHighlight: true
-    onSelect: function(dateText, inst) {
-        alert(dateText);
+}).on('changeDate', function (ev) {
+    var edad_correcta = ValidaEdad($(this).val());
+    if(!edad_correcta){
+        alertify.error('Debes ingresar una fecha mayor a un año.'); 
+        $(this).val('');
     }
 });
 
@@ -239,7 +242,30 @@ $("#EditarFechaNacPa").datepicker({
     language: "es",
     autoclose: true,
     todayHighlight: true
-    onSelect: function(dateText, inst) {
-        alert(dateText);
+}).on('changeDate', function (ev) {
+    var edad_correcta = ValidaEdad($(this).val());
+    if(!edad_correcta){
+        alertify.error('Debes ingresar una fecha mayor a un año.'); 
+        $(this).val('');
     }
 });
+
+function ValidaEdad(fecha) {
+    fecha = fecha.split("-");
+    var day = fecha[2];
+    var month = fecha[1];
+    var year = fecha[0];
+    var age = 1;
+    var mydate = new Date();
+    mydate.setFullYear(year, month-1, day);
+
+    var currdate = new Date();
+    var setDate = new Date();        
+    setDate.setFullYear(mydate.getFullYear() + age,month-1, day);
+
+    if ((currdate - setDate) > 0){
+        return true;
+    }else{
+        return false;
+    }
+}

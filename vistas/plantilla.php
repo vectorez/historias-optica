@@ -81,6 +81,9 @@
 
         <!-- Select2 -->
         <link rel="stylesheet" href="vistas/bower_components/select2/dist/css/select2.min.css">
+
+         <!-- Alertfy-->
+        <link rel="stylesheet" href="vistas/plugins/alertifyjs/css/alertify.min.css">
         
         <!-- DataTables -->
         <script src="vistas/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -124,6 +127,9 @@
 
         <!-- Blokear pr ajax -->
         <script src="vistas/plugins/blockui/blockUi.js"></script>
+
+        <!-- Alertfy-->
+        <script src="vistas/plugins/alertifyjs/alertify.min.js"></script>
 
         <style type="text/css">
             [class^='select2'] {
