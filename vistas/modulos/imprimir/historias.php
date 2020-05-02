@@ -389,7 +389,7 @@
 							                                    </tr>';
 		                                				}else{
 		                                					echo '<tr>
-							                                        <td style="text-align: center;">ID</td>
+							                                        <td style="text-align: center;">OI</td>
 							                                        <td>
 							                                            '.$value['auxiliares_esfera_v'].'
 							                                        </td>
@@ -483,7 +483,7 @@
 		                                        </td>
 		                                    </tr>
 		                                     <tr>
-		                                        <td style="text-align: center;">ID</td>
+		                                        <td style="text-align: center;">OI</td>
 		                                        <td>
 		                                            <?php echo $respuesta['historias_sin_correcion_id_v'];?> 
 		                                        </td>
@@ -562,7 +562,7 @@
 							                                    </tr>';
 		                                				}else{
 		                                					echo '<tr>
-							                                        <td style="text-align: center;">ID</td>
+							                                        <td style="text-align: center;">OI</td>
 							                                        <td>
 							                                            '.$value['auxiliares_esfera_v'].'
 							                                        </td>
@@ -664,8 +664,8 @@
 		                                        <th width="11%">Avvl</th>
 		                                        <th width="11%">Add</th>
 		                                        <th width="11%">Avvp</th>	
-		                                        <th width="11%">DP</th>
-		                                        <th width="11%">Altura Foral</th>
+		                                        <th width="11%">Dp</th>
+		                                        <th width="11%">Alt. Focal</th>
 		                                    </tr>
 		                                </thead>
 		                                <tbody>
@@ -703,7 +703,7 @@
 							                                    </tr>';
 		                                				}else{
 		                                					echo '<tr>
-							                                        <td style="text-align: center;">ID</td>
+							                                        <td style="text-align: center;">OI</td>
 							                                        <td>
 							                                            '.$value['auxiliares_esfera_v'].'
 							                                        </td>
@@ -806,14 +806,14 @@
 							<tr  style="text-align: justify;">
 								<th>Querataometría OD</th>
 								<td colspan="2"><?php echo $respuesta['historias_queratometria_od_v']; ?></td>
-								<th>Querataometría ID</th>
+								<th>Querataometría OI</th>
 								<td colspan="2"><?php echo $respuesta['historias_queratometria_id_v']; ?></td>
 							</tr>
 
 							<tr  style="text-align: justify;">
 								<th>Tonometría OD</th>
 								<td><?php echo $respuesta['historias_tonometria_od_v']; ?></td>
-								<th>Tonometría ID</th>
+								<th>Tonometría OI</th>
 								<td><?php echo $respuesta['historias_tonometria_oi_v']; ?></td>
 								<th>Tipo de tonometro</th>
 								<td><?php echo $respuesta['historias_tipo_tonometro_v']; ?></td>

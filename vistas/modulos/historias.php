@@ -709,7 +709,7 @@
                                                         </td>
                                                     </tr>
                                                      <tr>
-                                                        <td style="text-align: center;">ID</td>
+                                                        <td style="text-align: center;">OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="NuevoEsferaID" id="NuevoEsferaID">
@@ -905,7 +905,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="text-align: center;">ID</td>
+                                                        <td style="text-align: center;">OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="NuevoEsferaRetinosID" id="NuevoEsferaRetinosID">
@@ -1096,7 +1096,7 @@
                                                 </td>
                                             </tr>
                                                 <tr>
-                                                <td style="text-align: center;">ID</td>
+                                                <td style="text-align: center;">OI</td>
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control input-sm" required name="NuevoEsferaFormulaFinalID" id="NuevoEsferaFormulaFinalID">
@@ -1167,7 +1167,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Queratometría ID</label>
+                                        <label>Queratometría OI</label>
                                         <input type="text" class="form-control input-sm" required name="NuevoQueratometriaID" id="NuevoQueratometriaID" placeholder="Queratometría ID">
                                     </div>
                                 </div>
@@ -1182,7 +1182,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Tonometría ID</label>
+                                        <label>Tonometría OI</label>
                                         <input type="text" class="form-control input-sm" required name="NuevoTonometriaID" id="NuevoTonometriaID" placeholder="Tonometría ID">
                                     </div>
                                 </div>
@@ -1999,7 +1999,7 @@
                                                         <input type="hidden" name="EditarODId" id="EditarODId">
                                                     </tr>
                                                      <tr>
-                                                        <td style="text-align: center;">ID</td>
+                                                        <td style="text-align: center;">OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="EditarEsferaID" id="EditarEsferaID">
@@ -2196,7 +2196,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="text-align: center;">ID</td>
+                                                        <td style="text-align: center;">OI</td>
                                                         <td>
                                                             <div class="form-group">
                                                                 <input type="text" class="form-control input-sm" required name="EditarEsferaRetinosID" id="EditarEsferaRetinosID">
@@ -2388,7 +2388,7 @@
                                                 <input type="hidden" name="EditarFormulaFinalODId" id="EditarFormulaFinalODId">
                                             </tr>
                                                 <tr>
-                                                <td style="text-align: center;">ID</td>
+                                                <td style="text-align: center;">OI</td>
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control input-sm" required name="EditarEsferaFormulaFinalID" id="EditarEsferaFormulaFinalID">
@@ -2460,7 +2460,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label>Queratometría ID</label>
+                                        <label>Queratometría OI</label>
                                         <input type="text" class="form-control input-sm" required name="EditarQueratometriaID" id="EditarQueratometriaID" placeholder="Queratometría ID">
                                     </div>
                                 </div>
@@ -2475,7 +2475,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Tonometría ID</label>
+                                        <label>Tonometría OI</label>
                                         <input type="text" class="form-control input-sm" required name="EditarTonometriaID" id="EditarTonometriaID" placeholder="Tonometría ID">
                                     </div>
                                 </div>
