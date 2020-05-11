@@ -128,6 +128,24 @@ $('#tablaUsuarios tbody').on("click", ".btnEiminarUsuarios", function(){
     })
 });
 
+$('#tablaUsuarios tbody').on("click", ".btnEiminarOptometras", function(){
+    var x = $(this).attr('idUsuario');
+    swal({
+        title: '¿Está seguro de borrar el optometra?',
+        text: "¡Si no lo está puede cancelar la acción!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d73925',
+        cancelButtonColor: '#d33',
+        cancelButtonText: 'Cancelar',
+        confirmButtonText: 'Si, borrar optometra!'
+    },function(isConfirm) {
+        if (isConfirm) {
+            window.location = "index.php?ruta=optometra&id_Usuario="+x ;
+        }
+    })
+});
+
 
 /* Activar usuarios */
 $('#tablaUsuarios tbody').on("click", ".btnActivar", function(){

@@ -900,7 +900,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="form-group">
-                                                                <input type="text" class="form-control input-sm" required name="NuevoAVVPRetinosID" id="NuevoAVVPRetinosOD">
+                                                                <input type="text" class="form-control input-sm" required name="NuevoAVVPRetinosOD" id="NuevoAVVPRetinosOD">
                                                             </div>
                                                         </td>
                                                     </tr>

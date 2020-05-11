@@ -91,7 +91,7 @@
                                     }
 
                                     if($_SESSION['elimina'] == 1){
-                                        echo '&nbsp;<button title="Eliminar Optómetra" class="btn btn-danger btn-sm btnEiminarUsuarios" idUsuario ="'.$value['usuarios_id_i'].'">
+                                        echo '&nbsp;<button title="Eliminar Optómetra" class="btn btn-danger btn-sm btnEiminarOptometras" idUsuario ="'.$value['usuarios_id_i'].'">
                                                     <i class="fa fa-trash-o"></i>
                                                 </button>';
                                     }

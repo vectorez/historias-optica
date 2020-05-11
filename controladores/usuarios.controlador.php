@@ -353,7 +353,7 @@
 						  	closeOnConfirm: false
 					  	},
 					  	function(result){	
-							window.location = "usuarios"
+							window.location = "'.$_GET["ruta"].'"
 						});
 					</script>';
 				}		

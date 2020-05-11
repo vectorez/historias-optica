@@ -129,10 +129,11 @@
 		                                        <th width="13%">Esfera</th>
 		                                        <th width="13%">Cilindro</th>
 		                                        <th width="13%">Eje</th>
+		                                        <th width="13%">Avvl</th>
 		                                        <th width="13%">Add</th>
-		                                        <th width="13%">Av</th>	
-		                                        <th width="13%">AUV</th>	
+		                                        <th width="13%">Avvp</th>
 		                                        <th width="13%">DP</th>	
+		                                        <th width="13%">Alt. Focal</th>
 		                                    </tr>
 		                                </thead>
 		                                <tbody>
@@ -153,21 +154,24 @@
 							                                            '.$value['auxiliares_eje_v'].'
 							                                        </td>
 							                                        <td>
+							                                            '.$value['auxiliares_avvl_v'].'
+							                                        </td>
+							                                        <td>
 							                                            '.$value['auxiliares_add_v'].'
 							                                        </td>
 							                                        <td>
-							                                            '.$value['auxiliares_av_v'].'
-							                                        </td>
-							                                        <td>
-							                                            '.$value['auxiliares_auv_v'].'
+							                                            '.$value['auxiliares_avvp_v'].'
 							                                        </td>
 							                                        <td>
 							                                            '.$value['auxiliares_dp_v'].'
 							                                        </td>
+							                                        <td>
+							                                            '.$value['auxiliares_altura_foral_v'].'
+							                                        </td>
 							                                    </tr>';
 		                                				}else{
 		                                					echo '<tr>
-							                                        <td style="text-align: center;">ID</td>
+							                                        <td style="text-align: center;">OI</td>
 							                                        <td>
 							                                            '.$value['auxiliares_esfera_v'].'
 							                                        </td>
@@ -178,16 +182,19 @@
 							                                            '.$value['auxiliares_eje_v'].'
 							                                        </td>
 							                                        <td>
+							                                            '.$value['auxiliares_avvl_v'].'
+							                                        </td>
+							                                        <td>
 							                                            '.$value['auxiliares_add_v'].'
 							                                        </td>
 							                                        <td>
-							                                            '.$value['auxiliares_av_v'].'
-							                                        </td>
-							                                        <td>
-							                                            '.$value['auxiliares_auv_v'].'
+							                                            '.$value['auxiliares_avvp_v'].'
 							                                        </td>
 							                                        <td>
 							                                            '.$value['auxiliares_dp_v'].'
+							                                        </td>
+							                                        <td>
+							                                            '.$value['auxiliares_altura_foral_v'].'
 							                                        </td>
 							                                    </tr>';
 		                                				}

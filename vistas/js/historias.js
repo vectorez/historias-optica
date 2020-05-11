@@ -243,16 +243,16 @@ $('#tablaHistorias tbody').on("click", ".btnEditarhistoria", function(){
                     $("#EditarCilindroRetinosOD").val(item.auxiliares_cilindro_v);
                     $("#EditarEjeRetinosOD").val(item.auxiliares_eje_v);
                     $("#EditarAddRetinosOD").val(item.auxiliares_add_v);
-                    $("#EditarAVVLFormulaFinalOD").val(item.auxiliares_avvl_v);
-                    $("#EditarAVVPFormulaFinalOD").val(item.auxiliares_avvp_v);
+                    $("#EditarAVVLRetinosOD").val(item.auxiliares_avvl_v);
+                    $("#EditarAVVPRetinosOD").val(item.auxiliares_avvp_v);
                     $("#EditarRetinosODId").val(item.auxiliares_id_i);
                 }else{
                     $("#EditarEsferaRetinosID").val(item.auxiliares_esfera_v);
                     $("#EditarCilindroRetinosID").val(item.auxiliares_cilindro_v);
                     $("#EditarEjeRetinosID").val(item.auxiliares_eje_v);
                     $("#EditarAddRetinosID").val(item.auxiliares_add_v);
-                    $("#EditarAVVLFormulaFinalID").val(item.auxiliares_avvl_v);
-                    $("#EditarAVVPFormulaFinalID").val(item.auxiliares_avvp_v);
+                    $("#EditarAVVLRetinosID").val(item.auxiliares_avvl_v);
+                    $("#EditarAVVPRetinosID").val(item.auxiliares_avvp_v);
                     $("#EditarRetinosIDId").val(item.auxiliares_id_i);
                 }
             });

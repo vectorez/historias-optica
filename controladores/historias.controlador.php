@@ -434,8 +434,8 @@
 						'auxiliares_eje_v' 			=> $_POST['EditarEjeRetinosID'],
 						'auxiliares_add_v' 			=> $_POST['EditarAddRetinosID'],
 						'auxiliares_id_i' 			=> $_POST['EditarRetinosIDId'],
-						'auxiliares_av_v' 			=> '0',
-						'auxiliares_dp_v' 			=> '0',
+						'auxiliares_avvl_v' 		=> $_POST['EditarAVVLRetinosID'],
+						'auxiliares_avvp_v' 		=> $_POST['EditarAVVPRetinosID'],
 						'auxiliares_tipo_pregunta_v' 	=> 'Retinoscopia',
 						'auxiliares_od_id_v'		=> 'ID'
 					);
@@ -545,21 +545,10 @@
 						}else{
 							$activa_per = 0;
 						}
-						$campos = 'antecedentes_id_i';
 						$tabla = 'op_historias_antecedentes';
+						$valores = "antecedentes_tipo_v = '".$value['tipo']."', antecedentes_categoria_v = '".$value['cat']."', antecedentes_personal_i = ".$activa_per.", antecedentes_nombre_cat_v = '".$value['nombre_cat']."'";
 						$condiciones = "antecedentes_id_i = ".$value['id_antecedente'];
-						$resultado = ModeloDao::mdlMostrarUnitario($tabla, $valores, $condiciones);
-						if($resultado){
-							$tabla = 'op_historias_antecedentes';
-							$valores = "antecedentes_tipo_v = '".$value['tipo']."', antecedentes_categoria_v = '".$value['cat']."', antecedentes_personal_i = ".$activa_per.", antecedentes_nombre_cat_v = '".$value['nombre_cat']."'";
-							$condiciones = "antecedentes_id_i = ".$value['id_antecedente'];
-							ModeloDao::mdlEditar($tabla, $valores, $condiciones);
-						}else{
-							$tabla = 'op_historias_antecedentes';
-							$campos = 'antecedentes_historia_id_i, antecedentes_tipo_v, antecedentes_categoria_v, antecedentes_personal_i, antecedentes_nombre_cat_v';
-							$valores = $historia.",'".$value['tipo']."','".$value['cat']."',".$activa_per.",'".$value['nombre_cat']."'";
-							ModeloDao::mdlCrear($tabla, $campos, $valores);
-						}
+						ModeloDao::mdlEditar($tabla, $valores, $condiciones);
 					}
 
 					echo "<script>
